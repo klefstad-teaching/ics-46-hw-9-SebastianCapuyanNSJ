@@ -65,7 +65,7 @@ vector<string> generate_word_ladder(const string& begin_word, const string& end_
 
         for (const string& word : word_list) 
         {
-            if (is_adjacent(last_word, word) && visited.find(word) == visited.end()) 
+            if (is_adjacent(last_word, word)) 
             {
                 vector<string> new_ladder = ladder;
                 new_ladder.push_back(word);
@@ -106,7 +106,7 @@ void print_word_ladder(const vector<string>& ladder)
 {
     if (ladder.empty()) 
     {
-        error("Ladder is empty.", "", "\n");
+        error("No word ladder founc.", "", "\n");
         return;
     }
     
