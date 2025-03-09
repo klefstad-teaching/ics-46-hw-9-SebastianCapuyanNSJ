@@ -106,7 +106,7 @@ void print_word_ladder(const vector<string>& ladder)
 {
     if (ladder.empty()) 
     {
-        error("Ladder is empty.", "", endl)
+        error("Ladder is empty.", "", "\n");
         return;
     }
     
